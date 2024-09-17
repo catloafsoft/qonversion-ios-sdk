@@ -16,8 +16,11 @@ NSString *const keyQSourceVersion = @"com.qonversion.keys.sourceVersion";
 NSString *const kHistoricalDataSynced = @"isHistoricalDataSynced";
 
 #if TARGET_OS_OSX
-    NSString *const kQNPlatform = @"macOS";
-    NSString *const kQNOSName = @"macos";
+    // Try to work around API endpoints not recognizing this platform
+    NSString *const kQNPlatform = @"macCatalyst";
+    NSString *const kQNOSName = @"macCatalyst";
+//    NSString *const kQNPlatform = @"macOS";
+//    NSString *const kQNOSName = @"macos";
 #elif TARGET_OS_TV
     NSString *const kQNPlatform = @"tvOS";
     NSString *const kQNOSName = @"tvos";
