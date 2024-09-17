@@ -17,8 +17,8 @@ NSString *const kHistoricalDataSynced = @"isHistoricalDataSynced";
 
 #if TARGET_OS_OSX
     // Try to work around API endpoints not recognizing this platform
-    NSString *const kQNPlatform = @"macCatalyst";
-    NSString *const kQNOSName = @"macCatalyst";
+    NSString *const kQNPlatform = @"iOS";
+    NSString *const kQNOSName = @"ios";
 //    NSString *const kQNPlatform = @"macOS";
 //    NSString *const kQNOSName = @"macos";
 #elif TARGET_OS_TV
